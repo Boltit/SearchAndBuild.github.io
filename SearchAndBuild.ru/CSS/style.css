@@ -5,7 +5,7 @@
 
 html, body {
 	height: 100%;
-	background: url('../images/Background.png') 1% 0 fixed;
+	background: url('../images/Background.png') 50% 0;
 }
 
 .Biba{
@@ -14,18 +14,22 @@ html, body {
  
  .wrapper {
  	height: 100%;
- 	max-width: 1100px;
+ 	max-width: 1200px;
  	margin: 0 auto;
+ 	color: #00ce59;
+ 	font-family: "Biba_reg_font";
  }
  .page {
+ 	color: #00ce59;
+ 	font-family: "Biba_reg_font";
  	min-height: 100%;
- 	padding-bottom: 70px;
+ 	padding-bottom: 60px;
  	box-sizing: border-box;
  }
 
  .head {
  	font-family: "Biba_head_font";
- 	max-width: 1100px;
+ 	max-width: 1200px;
  	height: 300px;
  	background: #fff url('../images/OnTimeBruh.jpg') no-repeat center;
  }
@@ -36,16 +40,70 @@ html, body {
 	font-family: "Biba_reg_font";
 }
  .bottom {
- 	height: 70px;
- 	margin-top: -70px;
+ 	height: 60px;
+ 	margin-top: -60px;
  	box-sizing: border-box;
 
- 	background: rgba(204, 204, 204, 0.40);
- 	border-radius: 0 0 20px 20px;
+ 	background: rgba(204, 204, 204, 0.30);
+ 	border-radius: 0 0 5px 5px;
  	padding: #777;
  	font-size: 13px;
+ 	color: #000;
  	text-align: center;
  }
+
+ .meny{            
+background: #111;     
+padding: 5px;    
+border-radius: 5px;     
+box-shadow: 0px 0px 0px 2px #0ea8f4;     
+}
+ul {             
+width: 190px;     
+list-style: none;     
+padding: 0;     
+margin: 0 0 0 0;      
+font-size: 16px;    
+text-align: center;     
+}
+li ul {             
+position: absolute;     
+display: none;     
+margin-left: 190px;    
+margin-top: -30px;     
+}
+li a {             
+display: block;     
+padding: 5px;     
+margin-bottom: 5px;
+text-decoration: none;     
+color: ##00ce59;    
+border-radius: 5px;    
+box-shadow: 0px 0px 0px 2px #0ea8f4;     
+background: #7df9ff;     
+background: -moz-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);     /*Переходящий фон (градиент) пунктов меню*/
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#7df9ff), color-stop(100%,#FBFFFF));
+background: -webkit-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+background: -o-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+background: -ms-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+}
+li a:hover {         
+color: #ffe;    
+box-shadow: 0px 0px 5px 2px #0ea8f4;
+background: #009494;     
+background: -moz-radial-gradient(center, ellipse cover, #009494, #FBFFFF);     /*Градиент при наведении*/
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#009494), color-stop(100%,#FBFFFF));
+background: -webkit-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+background: -o-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+background: -ms-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+}
+li a:active{       
+color: #ef7a04;
+box-shadow: 0px 0px 15px 5px #0ea8f4;
+}
+li:hover ul {         
+display: block;     
+}
 
 @font-face {
 	font-family: "Biba_head_font";
